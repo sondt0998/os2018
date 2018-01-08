@@ -1,0 +1,42 @@
+hello world
+Changing password for sondt0998.
+(current) UNIX password: 
+Mon Jan  8 14:05:03 GMT 2018
+sondt0998-VirtualBox
+x86_64
+Linux sondt0998-VirtualBox 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+[    8.428441] AES CTR mode by8 optimization enabled
+[    8.451268] vboxvideo 0000:00:02.0: fb0: vboxdrmfb frame buffer device
+[    8.451286] [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+[    8.872655] Adding 2095100k swap on /dev/sda5.  Priority:-1 extents:1 across:2095100k FS
+[   10.705965] floppy0: no floppy controllers found
+[   10.944302] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   10.953002] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   10.954237] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   10.954668] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[   11.761292] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+14:08:14 up 10 min,  1 user,  load average: 0.19, 0.28, 0.22
+sondt0998
+sondt0998 tty7         2018-01-08 14:02 (:0)
+uid=1000(sondt0998) gid=1000(sondt0998) groups=1000(sondt0998),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+sondt099 tty7         :0               Mon Jan  8 14:02    gone - no logout
+reboot   system boot  4.10.0-28-generi Mon Jan  8 13:57   still running
+sondt099 tty7         :0               Mon Jan  8 13:50 - crash  (00:07)
+reboot   system boot  4.10.0-28-generi Mon Jan  8 13:50   still running
+sondt099 tty7         :0               Mon Jan  8 13:30 - crash  (00:19)
+reboot   system boot  4.10.0-28-generi Mon Jan  8 13:30   still running
+sondt099 tty7         :0               Mon Jan  8 10:53 - down   (00:14)
+reboot   system boot  4.10.0-28-generi Mon Jan  8 10:53 - 11:07  (00:14)
+sondt099 tty7         :0               Sun Jan  7 12:46 - down   (01:38)
+reboot   system boot  4.10.0-28-generi Sun Jan  7 12:46 - 14:24  (01:38)
+sondt099 tty7         :0               Sat Jan  6 13:38 - down   (00:40)
+reboot   system boot  4.10.0-28-generi Sat Jan  6 13:38 - 14:18  (00:40)
+
+wtmp begins Sat Jan  6 13:38:00 2018
+Login      Name          Tty      Idle  Login Time   Office     Office Phone
+sondt0998  Do Thai Son   tty7       18  Jan  8 14:02 (:0)
+ 14:16:47 up 18 min,  1 user,  load average: 0.29, 0.24, 0.19
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+sondt099 tty7     :0               14:02   18:48  30.00s  0.16s /sbin/upstart --user
+
+
