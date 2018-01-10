@@ -15,7 +15,8 @@ sondt0998@sondt0998-VirtualBox:~$ free | grep Mem
 Mem:        2045960     1447144       93564       70216      505252      360232
 sondt0998@sondt0998-VirtualBox:~$ free | awk '{print $1$2}' | grep Mem
 Mem:2045960
-sondt0998@sondt0998-VirtualBox:~$ cat /proc/cpuinfo | grep "cpu corescpu cores	: 1
+sondt0998@sondt0998-VirtualBox:~$ cat /proc/cpuinfo | grep "cpu cores"
+cpu cores	: 1
 sondt0998@sondt0998-VirtualBox:~$ cd ~/Pictures
 sondt0998@sondt0998-VirtualBox:~/Pictures$ find -iname "*.jpg"| wc -l
 0
