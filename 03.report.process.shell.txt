@@ -1,0 +1,39 @@
+ps -A
+  2187 pts/0    00:00:00 nano
+  2195 pts/17   00:00:00 bash
+  2326 ?        00:00:00 cups-browsed
+  2430 ?        00:00:00 kworker/0:0
+  3990 ?        00:00:00 kworker/0:1
+  4042 ?        00:00:00 kworker/u2:0
+  4066 ?        00:00:00 kworker/u2:2
+  4098 ?        00:00:00 gvfsd-http
+  4117 ?        00:00:00 kworker/u2:1
+  4139 pts/17   00:00:00 ps
+
+gnome-calculator &
+  [1] 4140
+
+ps aux | grep -i gnome-calculator | awk {'print $2'}
+  4140
+  4151
+
+cat /proc/4140/status
+  CapBnd:	0000003fffffffff
+  CapAmb:	0000000000000000
+  NoNewPrivs:	0
+  Seccomp:	0
+  Cpus_allowed:	1
+  Cpus_allowed_list:	0
+  Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+  Mems_allowed_list:	0
+  voluntary_ctxt_switches:	163
+  nonvoluntary_ctxt_switches:	467
+
+kill -STOP 4140
+  [1]+  Stopped                 gnome-calculator
+
+kill -CONT 4140
+
+kill -KILL 4140
+  [1]+  Killed                  gnome-calculator
+
