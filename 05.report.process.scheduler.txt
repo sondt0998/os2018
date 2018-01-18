@@ -1,0 +1,15 @@
+~$ cat /proc/sched_debug | grep systemd
+         systemd     1       340.790473      2132   120         0.000000      1242.603798         0.000000 0 0 /autogroup-2
+         systemd  1162        13.914240        28   120         0.000000        15.225072         0.000000 0 0 /autogroup-86
+
+~$ cat /proc/1/sched | grep switches
+nr_switches                                  :                 2134
+nr_voluntary_switches                        :                  956
+nr_involuntary_switches                      :                 1178
+
+~$ cat /proc/1162/sched | grep switches
+nr_switches                                  :                   28
+nr_voluntary_switches                        :                   12
+nr_involuntary_switches                      :                   16
+
+
